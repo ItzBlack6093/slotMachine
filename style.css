@@ -1,0 +1,39 @@
+
+        body{
+            cursor: url('imagies/handle.png'), auto;
+        }
+        .table_component {
+            display: flex;
+            justify-content: center;
+            overflow: auto;
+            width: 100%;
+        }
+        
+        .table_component table {
+            border: 1px solid #dededf;
+            height: 100px;
+            width: 365px;
+            table-layout: fixed;
+            border-collapse: collapse;
+            border-spacing: 1px;
+            text-align: left;
+        }
+        
+        .table_component caption {
+            caption-side: top;
+            text-align: left;
+        }
+        
+        .table_component th {
+            border: 1px solid #dededf;
+            background-color: #eceff1;
+            color: #000000;
+            padding: 5px;
+        }
+        
+        .table_component td {
+            border: 1px solid #dededf;
+            background-color: #9c9c9c;
+            color: #000000;
+            padding: 5px;
+        }
