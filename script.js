@@ -15,6 +15,12 @@
         var moneyAddIfWin=500
         var sfx=null
         var isPlaying=false
+        function delayButton(){
+            document.getElementById("gamb").disabled = true;
+            setTimeout(function(){
+                document.getElementById("gamb").disabled = false;
+            },1000)
+        }
         function stopSFX(){
                 if(isPlaying == true){
                     sfx.pause();
