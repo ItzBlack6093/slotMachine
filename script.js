@@ -150,6 +150,6 @@
         updateDisplayBalance()
         updateDisplayShield()
         updateDisplayBuffDebuff()
-        //delayButton(randomNum())
+        delayButton()
         //console.log(moneyAddIfWin*deBuffX*buff7-50)//just to ensure the formula working correct
         } 
