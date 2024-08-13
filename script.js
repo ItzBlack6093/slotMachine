@@ -15,12 +15,7 @@
         var moneyAddIfWin=500
         var sfx=null
         var isPlaying=false
-        function delayButton(){
-            document.getElementById("gamb").disabled = true;
-            setTimeout(function(){
-                document.getElementById("gamb").disabled = false;
-            },1000)
-        }
+        var isMuted=false
         function stopSFX(){
                 if(isPlaying == true){
                     sfx.pause();
@@ -28,9 +23,12 @@
         }
         function startSFX(filename){
                 stopSFX();
-                sfx = new Audio('sfx/' + filename);                     
+                sfx = new Audio('sfx/' + filename);                    
                 sfx.play();
                 isPlaying = true;
+                if(isMuted){
+                    stopSFX()
+                }
         }
         function calculatedBalance(){
             if (turnOf7>0){
@@ -75,6 +73,20 @@
         // Đánh dấu rằng âm thanh đã được phát
         sessionStorage.setItem('audioPlayed', 'true');
 }
+        }
+        function mute(){
+            if(isMuted){
+                isMuted=false
+                document.getElementById('mute').style.background='blue'
+                document.getElementById('mute').style.color='white'
+                document.getElementById('mute').innerHTML = 'SFX is enabled'
+            }
+            else{
+                isMuted=true
+                document.getElementById('mute').style.background='red'
+                document.getElementById('mute').style.color='black'
+                document.getElementById('mute').innerHTML = 'SFX is disabled'
+            }
         }
         function randomNum(){
             if(balance <= 0){
@@ -150,6 +162,6 @@
         updateDisplayBalance()
         updateDisplayShield()
         updateDisplayBuffDebuff()
-        delayButton()
+        //delayButton(randomNum())
         //console.log(moneyAddIfWin*deBuffX*buff7-50)//just to ensure the formula working correct
         } 
