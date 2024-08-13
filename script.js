@@ -30,6 +30,12 @@
                     stopSFX()
                 }
         }
+        function delayButton(){
+            document.getElementById("gamb").disabled = true;
+            setTimeout(function(){
+                document.getElementById("gamb").disabled = false;
+            },1000)
+        }
         function calculatedBalance(){
             if (turnOf7>0){
                 if(rdn1!=1) { buff7=2 ; turnOf7-- } 
@@ -162,6 +168,6 @@
         updateDisplayBalance()
         updateDisplayShield()
         updateDisplayBuffDebuff()
-        //delayButton(randomNum())
+        delayButton()
         //console.log(moneyAddIfWin*deBuffX*buff7-50)//just to ensure the formula working correct
         } 
