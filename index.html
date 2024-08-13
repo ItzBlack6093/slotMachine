@@ -3,15 +3,6 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="favicon.ico" type="image/x-icon">
-    <meta property="og:image" content="https://cdn.discordapp.com/attachments/1272755101991440456/1272763665174495243/Khong_Co_Tieu_e2_20240813104814.png?ex=66bc2908&is=66bad788&hm=9d6eee4646dddb2e11d7b6c38071c790032b2be32419ed45c53afd8f7383141d&">
-    <meta property="twitter:image" content="https://cdn.discordapp.com/attachments/1272755101991440456/1272763665174495243/Khong_Co_Tieu_e2_20240813104814.png?ex=66bc2908&is=66bad788&hm=9d6eee4646dddb2e11d7b6c38071c790032b2be32419ed45c53afd8f7383141d&">
-    <meta property="og:image:type" content="image/png">
-    <meta property="og:image:width" content="1280">
-    <meta property="og:image:height" content="720">
-    <meta name="og:title" content="Slot machine!">
-    <meta name="description" content="Ye... A slot machine, but friendlier">
-    <meta name="twitter:description" content="Ye... A slot machine, but friendlier">
     <title>Gamblink coin</title>
 
     <link rel="stylesheet" type="text/css" href="style.css">
@@ -23,6 +14,7 @@
 <body style="background-color: #d2691e70; text-align: center;"> 
     <h1> Gambling machine game</h1>
     <small><small><small>The game does not promote gambling, just chill out and play</small></small></small>
+    <button onclick="mute();" id="mute"  style="width: 120px; height: 50px;border-radius: 10px;background-color: blue;color: white;">SFX is enabled</button>
     <hr> <br>
     <h1 id="result"><b>Your result:</b></h1>
     <img src="result/nothing30px.png" width="50px" id="firsttop" >
@@ -54,13 +46,13 @@
     <br>
     <p id="thongBao" style="size: 50px;"> </p>
     <div>
-    <button id="gamb" onclick="randomNum();;"  style="width: 120px; height: 50px;border-radius: 10px;background-color: rgb(54, 147, 240);">Go gambling!</button>
+    <button onclick="randomNum();;"  style="width: 120px; height: 50px;border-radius: 10px;background-color: rgb(54, 147, 240);">Go gambling!</button>
     <button onclick="sellShield();updateDisplayShield();updateDisplayBalance()" style="width: 175px; height: 50px;border-radius: 10px;background-color: rgb(241, 122, 122);">Sell 1 shield = $750</button>
     </div>
     <br><hr>
     <h2>RULES</h2>
     <h4>$50 each time<br>
-    Line up 3 icons to earn corresponding prize in the table below (middle row).<br>
+    Line up 3 icons to earn corresponding prize in the table below.<br>
     You earn $100 every 10 turns</h4>
 
         <div class="table_component" role="region" tabindex="0">
@@ -102,12 +94,10 @@
         <img src="imagies/dongluc1.png">
         <img src="imagies/dongluc2.jfif" width="550px">
          <hr> <br>
-    Page developer:a khai dep trai | <a href="http://facebook.com/nguyenthekhai7749" target="_blank">Facebook</a> | <a href="http://discord.com/users/983387837800005652" target="_blank">Discord</a> 
+    Page developer: <a href="http://facebook.com/nguyenthekhai7749" target="_blank">Facebook</a> <a href="http://discord.com/users/983387837800005652" target="_blank">Discord</a> 
     <br>
-    Co-op developer: Itzblack trum web developer | <a href="https://itzblack.carrd.co/" target="_blank" >Carrd</a>
+    Co-op developer: Itzblack trum web developer <a href="https://itzblack.carrd.co/" target="_blank" >Carrd</a>
     <br>
     Sound effects by <a href="https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&cad=rja&uact=8&ved=2ahUKEwjx6taC8-6HAxXAk1YBHRk6CTgQFnoECBsQAQ&url=https%3A%2F%2Fwww.youtube.com%2F%40raxdflipnote&usg=AOvVaw1DNMJWvHHhlwnBcP7DudSR&opi=89978449" target="_blank">raxdflipnote</a>
-    <br>
-    Have a look at  <a href="https://itzblack6093.github.io/guessNumber/" target="_blank" >our first project</a>
 </body>
 </html>
